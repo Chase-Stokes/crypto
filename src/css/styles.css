@@ -1,0 +1,47 @@
+body {
+  background: black;
+  color: white;
+  font-family:monospace;
+}
+
+label{
+  display: block;
+}
+button {
+  margin-top: 1em;
+}
+.form-control {
+  max-width: fit-content;
+}
+
+.jumbotron{
+  text-align: center;
+  margin: 3em;
+}
+
+#box1 img {
+  max-width: 1em;
+  max-height: 1em;
+  display: inline-block;
+}
+#box1 div {
+  padding: 1.5em;
+  margin: 1em;
+  border-bottom: solid white .05px;
+  border-top: solid white .05px;
+  background-color: rgba(37, 32, 32, 0.562);
+}
+.red {
+  color:red;
+}
+.green {
+  color: rgb(19, 255, 19);
+}
+.blue {
+  color: rgb(0, 238, 255);
+}
+.name {
+  font-size: 1.1em;
+}
+
+

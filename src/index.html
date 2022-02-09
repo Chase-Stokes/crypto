@@ -5,39 +5,46 @@
 </head>
 <body>
   <div class="container">
-    <div class="header">
-      <h1>Crypto Currency Information</h1>
-    </div>
-    <div class="showErrors"></div>
-    <div class="box" >
-      <ol id="box1"></ol>
-    </div>
-    <div class="box2" >
-      <h6>Find exchange to BTC:</h6>
-      <form id="formOne">
-        <div class="form-group">
-          <label for="currency">Select Currency:<label>
-          <select name="currency" id="currency">
-            <option value="">Select...</option>
-            <option value="1">Ethereum</option>
-            <option value="2">Tether</option>
-            <option value="3">Binance</option>
-          </select>  
-        </div>
-        <div class="form-group">
-          <button id="exchange-btn" class="btn-primary">Get exchange rates</button>
-        </div>
-      </form>
-      <div id="exchange-output">
-
+      <div class="jumbotron">
+        <h1>Crypto Currency Information</h1>
       </div>
-    </div>
-    <div class="box" >
-      <ul id="box3"></ul>
-    </div>
-    <div class="box" >
-      <ul id="box4"></ul>
-    </div>
+    <div class="row">
+      <div class="col">
+        <div class="showErrors"></div>
+        <div class="box" id="box1">
+        </div>
+      </div>
+      <div class="col">
+        <div class="box2 box" >
+          <h6>Find exchange to BTC:</h6>
+          <form id="formOne">
+            <div class="form-group">
+              <label for="currency">Select Currency:<label>
+              <select name="currency" class="form-control" id="currency">
+                <option value="">Select...</option>
+                <option value="1">Ethereum</option>
+                <option value="2">Tether</option>
+                <option value="3">Binance</option>
+                <option value="4">USD Coin</option>
+                <option value="5">XRP</option>
+                <option value="6">Cardano</option>
+              </select>  
+            </div>
+            <div class="form-group">
+              <button id="exchange-btn" class="btn btn-primary">Get exchange rates</button>
+            </div>
+          </form>
+          <div id="exchange-output">
+          </div>
+        </div>
+      </div>
+        <div class="box" >
+          <ul id="box3"></ul>
+        </div>
+        <div class="box" >
+          <ul id="box4"></ul>
+        </div>
+      </div>
   </div>
 </body>
 </html>
