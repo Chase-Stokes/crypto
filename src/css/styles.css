@@ -9,9 +9,13 @@ label{
 }
 button {
   margin-top: 1em;
+  margin-bottom: 1em;
 }
-.form-control {
-  max-width: fit-content;
+select {
+  max-width: 33%;
+  margin-left: 12%;
+  float: left;
+  text-align: center;
 }
 
 .jumbotron{
@@ -43,5 +47,7 @@ button {
 .name {
   font-size: 1.1em;
 }
-
+.box2 {
+  text-align: center;
+}
 
