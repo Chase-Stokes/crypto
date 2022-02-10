@@ -4,62 +4,66 @@
   <title>Crypto Exchange</title>
 </head>
 <body>
+  <div class="jumbotron">
+    <div class="nsh-logo-container"><div class="nsh-logo-n"><svg style="width:3.5%; float:left;" viewBox="0 0 60 60"><g fill-rule="nonzero" fill="none"><path style="transition:fill 0.3s ease-in-out" d="M13.487964.025067 C6.015456.130506.010218 6.212755 0 13.686 v32.628 c-.00225 5.535029 3.331107 10.525988 8.44479 12.644192 5.113684 2.118204 10.999884.946194 14.91221-2.969192 l9.287-9.289c.22107 7.469981 6.395528 13.380372 13.868036 13.274933 C53.984544 59.869494 59.989782 53.787245 60 46.314 V13.686c.00225-5.535028-3.331107-10.525988-8.44479-12.644192 C46.441525-1.076396 40.555325.095614 36.643 4.011 L27.356 13.3C27.13493 5.830018 20.960472-.080372 13.487964.025067z" fill="hsla(355, 100%, 50%, 1)"></path><ellipse style="transition:cx 0.3s ease-in-out, cy 0.3s ease-in-out" fill="#FFFFFF" rx="13.686" ry="13.686" cx="13.686" cy="46.314"></ellipse></g></svg></div><div class="nsh-logo-text dn dib-ns n-ml18 n-pt3 relative"><span style="float:left; margin:.5em  0 0 .5em  ;"><div>Nomics</div>first to list new assets</span></div></div>
+  </div>
+  
   <div class="container">
-    <div class="jumbotron">
-      <h1>Crypto Currency Information</h1>
-    </div>
     <div class="row">
       <div class="col">
         <div class="showErrors"></div>
-        <div class="box" id="box1">
-        </div>
+        <div class="box" id="box1"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <canvas id="chart"></canvas>
       </div>
       <div class="col">
         <div class="box2 box" >
           <h3>Find exchange rate:</h3>
-            <div class="form-group">
-              <label for="choice1">Select Currency:<label>
-              <select name="choice1" class="form-control" id="choice1">
-                <option value="">Select...</option>
-                <option value="0">Bitcoin</option>
-                <option value="1">Ethereum</option>
-                <option value="2">Tether</option>
-                <option value="3">Binance</option>
-                <option value="4">USD Coin</option>
-                <option value="5">XRP</option>
-                <option value="6">Cardano</option>
-                <option value="7">Solana</option>
-                <option value="8">Hex</option>
-                <option value="9">Polkadot</option>
-              </select>  
-              <select name="choice2" class="form-control" id="choice2">
-                <option value="">Select...</option>
-                <option value="0">Bitcoin</option>
-                <option value="1">Ethereum</option>
-                <option value="2">Tether</option>
-                <option value="3">Binance</option>
-                <option value="4">USD Coin</option>
-                <option value="5">XRP</option>
-                <option value="6">Cardano</option>
-                <option value="7">Solana</option>
-                <option value="8">Hex</option>
-                <option value="9">Polkadot</option>
-              </select>  
-            </div>
-            <div class="form-group">
-              <button id="exchange-btn" class="btn btn-primary">Get exchange rates</button>
-            </div>
-          <div id="exchange-output">
-          </div>
+          <div class="form-group">
+            <label for="choice1">Select Currency:<label>
+            <select name="choice1" class="form-control" id="choice1">
+            <option value="">Select...</option>
+            <option value="0">Bitcoin</option>
+            <option value="1">Ethereum</option>
+            <option value="2">Tether</option>
+            <option value="3">Binance</option>
+            <option value="4">USD Coin</option>
+            <option value="5">XRP</option>
+            <option value="6">Cardano</option>
+            <option value="7">Solana</option>
+            <option value="8">Hex</option>
+            <option value="9">Polkadot</option>
+          </select>  
+          <select name="choice2" class="form-control" id="choice2">
+            <option value="">Select...</option>
+            <option value="0">Bitcoin</option>
+            <option value="1">Ethereum</option>
+            <option value="2">Tether</option>
+            <option value="3">Binance</option>
+            <option value="4">USD Coin</option>
+            <option value="5">XRP</option>
+            <option value="6">Cardano</option>
+            <option value="7">Solana</option>
+            <option value="8">Hex</option>
+            <option value="9">Polkadot</option>
+          </select>  
         </div>
+        <div class="form-group">
+          <button id="exchange-btn" class="btn btn-primary">Get exchange rates</button>
+        </div>
+        <div id="exchange-output"></div>
       </div>
-      <div class="box" >
-        <ul id="box3"></ul>
-      </div>
-      <div class="box" >
-        <ul id="box4"></ul>
-      </div>
-    </div>
+    </div> 
   </div>
+    <div class="box" >
+      <ul id="box3"></ul>
+    </div>
+    <div class="box" >
+      <ul id="box4"></ul>
+    </div>  
+  </div>  
 </body>
 </html>

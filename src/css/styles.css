@@ -19,8 +19,11 @@ select {
 }
 
 .jumbotron{
-  text-align: center;
-  margin: 3em;
+  margin-bottom: 3em;
+  background: linear-gradient(rgba(29, 31, 29, 0.8), rgba(39, 35, 35, 0.8));
+  width: 100%;
+  min-height: 4.5em;
+  padding: .5em
 }
 
 #box1 img {
@@ -30,16 +33,17 @@ select {
 }
 #box1 div {
   padding: 1.5em;
-  margin: 1em;
   border-bottom: solid white .05px;
-  border-top: solid white .05px;
   background-color: rgba(37, 32, 32, 0.562);
 }
-.red {
-  color:red;
+.rank {
+  color:rgb(255, 251, 0);
+}
+.high{
+  color: red;
 }
 .green {
-  color: rgb(19, 255, 19);
+  color:  rgb(0, 255, 0);
 }
 .blue {
   color: rgb(0, 238, 255);
@@ -50,4 +54,22 @@ select {
 .box2 {
   text-align: center;
 }
+.chart {
+  margin: 1em 0 5em 0;
+  border: dashed green 1px;
+  min-height: 15em;
+  width: 100%;
+}
+#chart {
+  width: 100%;
+  max-height: 600px;
+}
+.row{
+  margin-bottom: 5em;
+}
+.cryptoCurrencies {
+  text-align: center;
+  margin: 2em;
+}
+
 
